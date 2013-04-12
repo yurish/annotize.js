@@ -3,22 +3,26 @@
     <head>
         <title></title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <script type="text/javascript" src="js/annotations.js"></script>
+        <script type="text/javascript" src="js/annotations.js" data-config="js/annotations.config.js"></script>
         <script type="text/javascript" src="js/alertbean.js"></script>
         <script type="text/javascript" src="js/consolebean.js"></script>
+        <script type="text/javascript" src="js/divbean.js"></script>
         <script type="text/javascript" src="js/annotations.config.js"></script>
     </head>
     <body>
+        <div id="testing"></div>
         <script type="text/javascript">
             var alertBean = _autowired(AlertBean, "configurationBean");
             var alertBean2 = _autowired(AlertBean, "annotationFromBean");
             var consoleBean = _autowired(ConsoleBean);
+            var divBean = _autowired(DivBean);
             var consoleBean2 = _autowired(ConsoleBean);
             alertBean.test();
             alertBean2.test();
             consoleBean.test();
             consoleBean.setValue("teste test");
             consoleBean2.test();
+            divBean.test();
         </script>
         <div>TODO write content</div>
     </body>

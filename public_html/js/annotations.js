@@ -4,7 +4,7 @@ var _an, _autowired, _annotations;
     var applicationContext = [];
 
     _annotations = function() {
-
+        
     };
     _annotations.config = function(configObject) {
         for (var configItem in configObject) {
@@ -39,6 +39,7 @@ var _an, _autowired, _annotations;
 
             }
         }
+        console.log("No bean found in context");
     };
 
     function _generateBeanId() {
