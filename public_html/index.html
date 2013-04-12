@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript" src="js/annotations.js"></script>
+        <script type="text/javascript" src="js/alertbean.js"></script>
+        <script type="text/javascript" src="js/consolebean.js"></script>
+        <script type="text/javascript" src="js/annotations.config.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var alertBean = _autowired(AlertBean, "configurationBean");
+            var alertBean2 = _autowired(AlertBean, "annotationFromBean");
+            var consoleBean = _autowired(ConsoleBean);
+            var consoleBean2 = _autowired(ConsoleBean);
+            alertBean.test();
+            alertBean2.test();
+            consoleBean.test();
+            consoleBean.setValue("teste test");
+            consoleBean2.test();
+        </script>
+        <div>TODO write content</div>
+    </body>
+</html>
